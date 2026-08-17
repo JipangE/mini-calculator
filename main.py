@@ -65,7 +65,7 @@ class Matrix:
 
     @classmethod
     def from_rows(cls, rows):
-        """2차원 리스트를 검증한 뒤 Matrix로 만든다. 문제가 있으면 ValueError."""
+        """nxn 2차원 리스트를 검증한 뒤 Matrix로 만든다. 문제가 있으면 ValueError."""
         if not isinstance(rows, list) or len(rows) == 0:
             raise ValueError("2차원 배열이 아닙니다.")
 
